@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: #f3f1f1;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    background-color: #1677b8;
+}
+h1{
+    font-size: 35px;
+}
+.container-head{
+    display: flex;
+    max-width: 1024px;
+    width: 95%;
+    margin-top: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-loja{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1024px;
+    width: 95%;
+    margin-top: 10px;
+    margin: 0 auto;
+        
+}
+
+.sobre-loja {
+    margin-top: 35px;
+    
+}
+
+.sobre-conteudo h2{
+    margin-bottom: 15px;
+    padding-bottom: 17px;
+    border-bottom: 3px solid #1677b8;
+    font-style: italic;
+    color: #1677b8;
+}
+
+
+.produtos{
+    
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.cards-produtos img{
+    width: 100%;
+
+}
+.cards-produtos{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    gap: 1%;
+    
+}
+
+.cards-produtos button {
+    width: 100%;
+    padding: 7px;
+    background-color: #1677b8;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.h2-products {
+    margin-bottom: 50px;
+    padding-bottom: 17px;
+    border-bottom: 3px solid #1677b8;
+    font-style: italic;
+    color: #1677b8;
+}
+.products-description h3{
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.products-description p{
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 975px) {
+    .container-loja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .sobre-conteudo {
+        margin-top: 10px;
+    }
+    .cards-produtos{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 1%;
+        
+    }
+}
+
+@media screen and (max-width: 640px){
+    .cards-produtos{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        column-gap: 1%;
+        
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 248px){
+    nav ul {
+        display: none;
+    }
+}
+
+
+
+
